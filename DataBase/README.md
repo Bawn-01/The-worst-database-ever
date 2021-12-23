@@ -1,0 +1,2 @@
+# THIS DATA BASE REQUIRES YOU TO DOWNLOD PYTHON!!!
+its very bad aswell

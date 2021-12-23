@@ -1,5 +1,5 @@
 Python and javascript files go in this folder.
-For explanation: Python is for input, and javascript is for managing files.
+For explanation: Python is for input, and javascript is for managing files but so is python.
 
 
 When you have added your file(s) proceed to the Database.bat file and if its python:

@@ -19,21 +19,21 @@ while 3 > 2:
     inputbar = input("SETTINGS: ")
     if inputbar == "_new":
         inp = input("NAME : ")
-        if " " in inp:
-            print("invalid)
-        else: 
-            index.files.new(inp.lower() + ".dtb")
+        index.files.new(inp.lower() + ".dtb")
     if inputbar == "_edit":
         inp = input("FILE NAME : ")
-        index.files.edit(inp.lower())
+        checkFile = os.path.isfile(inp)
+        if checkFile == True:
+            index.files.edit(inp.lower())
     if inputbar == "_read":
         inp = input("FILE NAME : ")
-        print("")
-        index.files.read(inp.lower())
+        checkFile = os.path.isfile(inp)
+        if checkFile == True:
+            index.files.edit(inp.lower())
+            print("")
         t.sleep(2.5)
     if inputbar == "_del":
         inp = input("FILE : ")
         os.remove(inp.lower())
     if inputbar == "_exit":
         break
-

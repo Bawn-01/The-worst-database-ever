@@ -19,7 +19,10 @@ while 3 > 2:
     inputbar = input("SETTINGS: ")
     if inputbar == "_new":
         inp = input("NAME : ")
-        index.files.new(inp.lower() + ".dtb")
+        if " " in inp:
+            print("invalid)
+        else: 
+            index.files.new(inp.lower() + ".dtb")
     if inputbar == "_edit":
         inp = input("FILE NAME : ")
         index.files.edit(inp.lower())

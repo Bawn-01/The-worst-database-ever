@@ -29,7 +29,7 @@ while 3 > 2:
         inp = input("FILE NAME : ")
         checkFile = os.path.isfile(inp)
         if checkFile == True:
-            index.files.edit(inp.lower())
+            index.files.read(inp.lower())
             print("")
         t.sleep(2.5)
     if inputbar == "_del":
